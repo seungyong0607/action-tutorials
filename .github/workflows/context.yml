@@ -16,3 +16,4 @@ jobs:
         script: |
           cd /home
           ls -al
+          node -v
