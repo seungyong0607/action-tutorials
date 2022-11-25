@@ -9,6 +9,4 @@ jobs:
     
     steps:
       - name: "context"
-        env:
-          COMMIT_ID: ${{ SECRET.HOST }}
-        run: echo "Commit id => $COMMIT_ID"
+        run: echo "Commit id => COMMIT_ID"
