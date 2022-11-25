@@ -4,9 +4,11 @@ on: [push]
 
 jobs:
   build:
-  
+    name: Build
     runs-on: ubuntu-latest
     
     steps:
-      - name: "context"
-        run: echo "Commit id => COMMIT_ID"
+      - name: "executing remote ssh commands using key"
+        with: 
+          host: ${{ secrets.HOST }}
+        run: echo "Commit id => $host"
