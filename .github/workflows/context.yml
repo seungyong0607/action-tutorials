@@ -9,6 +9,6 @@ jobs:
     
     steps:
       - name: "executing remote ssh commands using key"
-        with: 
+        env: 
           host: ${{ secrets.HOST }}
         run: echo "Commit id => $host"
