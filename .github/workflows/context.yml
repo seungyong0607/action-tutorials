@@ -15,5 +15,5 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /home
-          ls -al
-          git -v
+          node -v
+          
