@@ -16,6 +16,4 @@ jobs:
         script: |
           cd /home
           ls -al
-          nvm use 17.9.1
-          node -v
           
